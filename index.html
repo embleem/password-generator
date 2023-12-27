@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-</head>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body>
-    
-<script src="script.js"></script>
-</body>
+  <body>
+    <!-- Class that wraps around the main body -->
+    <main class="bodyWrap">
+      <!-- Header -->
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+
+      <!-- Box that shows the password -->
+      <section class="box">
+        <!-- Head for the password in the box -->
+        <section class="box-header">
+          <h2>Generate a Password</h2>
+        </section>
+
+        <!-- Class that contains the whole of the box that shows the password information -->
+        <section class="box-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+            onclick="writePassword()"
+          ></textarea>
+        </section>
+
+        <!-- Footer as well as button to generate password -->
+        <section class="box-footer">
+          <button id="generate" class="button">
+            <span>Generate Password</span>
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
