@@ -8,66 +8,48 @@ const passwordCharacterOptions = {
   
 // Password Generate function 
   let passwordGenerate = function () {
-    // empty variable to store password information
     let passwordInfo = "";
   
     // list of chosen characters
     const passwordCharactors = [];
   
-    // ask user for the length of their password
+// Asking Users if they would like to add numbers/special characters/ lower and upper case characters
     let howManyCharacters = window.prompt(
       "Enter the amount of characters you want for your password. NOTE: Must be between 8-128 characters"
     );
   
-    // If the character length doesn't match requirements, alert the user
     if (howManyCharacters >= 8 && howManyCharacters < 129) {
-      // ask if user wants to include integers
-      const getInteger = window.confirm("Would you like to include NUMBERS?");
+      const ifNumbers = window.confirm("Would you like to include NUMBERS?");
   
-      // if user wants to include numbers
-      if (getInteger) {
-        // add numerical characters to password data
+      if (ifNumbers) {
         passwordInfo += passwordCharacterOptions.num;
-        // add a number to the array of chosen characters
         passwordCharactors.push(getRandomChar(passwordCharacterOptions.num));
       }
   
-      // ask if user wants to include special characters
       const ifSpecialCharacters = window.confirm(
         "Would you like to include SPECIAL characters?"
       );
   
-      // if user wants to include special characters
       if (ifSpecialCharacters) {
-        // add special characters to password data
         passwordInfo += passwordCharacterOptions.specialChar;
-        // add a special character to the array of chosen characters
         passwordCharactors.push(getRandomChar(passwordCharacterOptions.specialChar));
       }
   
-      // ask if user wants to include lowercase characters
       const ifLowerCase = window.confirm(
         "Would you like to include LOWERCASE characters?"
       );
   
-      // if user wants to include lowercase characters
       if (ifLowerCase) {
-        // add lowercase characters to password data
         passwordInfo += passwordCharacterOptions.lowerCase;
-        // add a lowercase character to the list of chosen characters
         passwordCharactors.push(getRandomChar(passwordCharacterOptions.lowerCase));
       }
   
-      // ask if user wants to include uppercase characters
       const ifUpperCase = window.confirm(
         "Would you like to include UPPERCASE characters?"
       );
   
-      // if user wants to include uppercase characters
       if (ifUpperCase) {
-        // add uppercase characters to password data
         passwordInfo += passwordCharacterOptions.upperCase;
-        // add a uppercase character to the list of chosen characters
         passwordCharactors.push(getRandomChar(passwordCharacterOptions.upperCase));
       }
   

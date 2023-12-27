@@ -1,0 +1,275 @@
+/* Global Style  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.bodyWrap {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+.bodyWrap {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Header Styles */
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+header h1 {
+  border-bottom: 3px solid;
+  border-color: hsl(360, 91%, 36%);
+  padding-bottom: 10px;
+  margin: 0 auto 35px auto;
+  width: 30%;
+  margin-bottom: 5px;
+}
+
+/* box Container Styles */
+
+.box {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  margin-top: 7%
+}
+
+.box-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.box-body {
+  min-height: 100px;
+}
+
+.box-footer {
+  text-align: center;
+}
+
+.box-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.box-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Generate-Password button Styles  */
+
+.button {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  box-shadow: 0 9px  #999;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {background-color: rgb(212, 11, 11)}
+
+.button:active {
+  background-color: rgb(87, 4, 4);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Text styles  */
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* Media Queries */
+
+@media (max-width: 1400px) {
+  .box {
+    margin-top: 9%
+  }
+}
+
+@media (max-width: 1200px) {
+  .box {
+    margin-top: 10%
+  }
+}
+
+@media (max-width: 1060px) {
+  .box {
+    margin-top: 14%
+  }
+}
+
+@media (max-width: 760px) {
+  .box {
+    margin-top: 18%;
+  }
+}
+
+@media (max-width: 690px) {
+  .box {
+    margin-top: 20%;
+  }
+  
+  .button {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .box {
+    margin-top: 24%
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 0.8rem;
+  }
+
+  header h1 {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 125%;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+@media (max-width: 490px) {
+  #password {
+    padding-bottom: 45%;
+    position: none;
+  }
+
+  .box {
+    margin-top: 28%;
+  }
+}
+
+@media (max-width: 440px) {
+  .box {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    width: 85%;
+  }
+
+  #password {
+    padding-bottom: 50%;
+  }
+  
+  .box {
+    margin-top: 32%;
+  }
+}
+
+@media (max-width: 360px) {
+  #password {
+    padding-bottom: 60%;
+  }
+  h2 {
+    font-size: 110%;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .box {
+    margin-top: 38%
+  }
+}
+
+@media (max-width: 329px) {
+  #password {
+    padding-bottom: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  #password {
+    padding-bottom: 100%;
+  }
+  h2 {
+    font-size: 100%;
+    white-space: nowrap;
+  }
+  .box {
+    margin-top: 44%;
+  }
+}
