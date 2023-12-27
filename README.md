@@ -1,4 +1,4 @@
-# <Password Generator>
+# Password Generator
 
 ## Description
 
@@ -18,8 +18,8 @@ Here is the file structure:
 
 ## Credits
 
-With credits to https://github.com/jwilferd10/JavaScript-Password-Generator
-Looked at how he did his JavaScript for this project, thank you so much for the help! Was invaluable.
+With credits to https://github.com/jwilferd10/
+Looked at how he did his JavaScript for a similar project, thank you so much for the help! Was invaluable.
 
 ## License
 
